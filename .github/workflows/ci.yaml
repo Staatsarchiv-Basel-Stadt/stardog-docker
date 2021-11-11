@@ -29,7 +29,7 @@ jobs:
         uses: zazuko/action-docker-meta@main
         id: docker_meta
         with:
-          images: ghcr.io/Staatsarchiv-Basel-Stadt/stardog
+          images: ghcr.io/staatsarchiv-basel-stadt/stardog
 
       - name: Build and push Docker images
         id: docker_build
