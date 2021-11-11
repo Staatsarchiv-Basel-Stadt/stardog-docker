@@ -9,3 +9,8 @@ services:
       - 5820:5820
     volumes:
       - ./volumes/stardog:/var/opt/stardog
+
+  studio:
+    image: docker.io/stardog/stardog-studio:3.0.1
+    ports:
+      - 5821:8080
