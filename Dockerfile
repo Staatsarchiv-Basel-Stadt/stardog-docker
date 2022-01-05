@@ -1,4 +1,4 @@
-FROM docker.io/stardog/stardog:7.7.3-java11-preview
+FROM docker.io/stardog/stardog:7.8.0-java11-preview
 
 ENV STARDOG_HOME="/var/opt/stardog/"
 ENV STARDOG_EXT="/opt/stardog/ext"
