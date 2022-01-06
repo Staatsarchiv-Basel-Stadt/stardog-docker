@@ -13,7 +13,7 @@ Get a Stardog licence here: https://www.stardog.com/get-started/
 
 It will be sent by email.
 
-Download the license file and put it in the `volumes/stardog` directory.
+Download the license file and put it in the `~/volumes/stardog-home` directory.
 
 ## Run the stack
 
@@ -25,12 +25,12 @@ docker-compose up --build
 
 ## Open Stardog Studio
 
-Go to http://localhost:5821.
+Go to http://localhost:8080
 
 Add a new connection with following informations:
 
 - Username: `admin`
 - Password: `admin`
-- Endpoint: `http://127.0.0.1:5820`
+- Endpoint: `http://127.0.0.1:8081`
 
 You should be able to create a database, users, … and play with them.
