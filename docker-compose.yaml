@@ -5,12 +5,13 @@ services:
     build: .
     environment:
       - STARDOG_SERVER_JAVA_ARGS=-Xmx4g -Xms4g -XX:MaxDirectMemorySize=8g
+    user: "1001:1002"
     ports:
-      - 5820:5820
+      - 8081:5820
     volumes:
-      - ./volumes/stardog:/var/opt/stardog
+      - ~/volumes/stardog-home:/var/opt/stardog
 
   studio:
     image: docker.io/stardog/stardog-studio:3.0.1
     ports:
-      - 5821:8080
+      - 8080:8080
