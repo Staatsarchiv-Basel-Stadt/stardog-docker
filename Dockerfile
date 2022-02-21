@@ -1,9 +1,6 @@
 FROM docker.io/stardog/stardog:7.8.2-java11-preview
 
-ENV STARDOG_HOME="/var/opt/stardog/"
 ENV STARDOG_EXT="/opt/stardog/ext"
-ENV STARDOG_BIN ="/opt/stardog/bin"
-ENV STARDOG_SERVER_JAVA_ARGS="-Xmx3g -Xms3g -XX:MaxDirectMemorySize=6g -Dlog4j2.formatMsgNoLookups=true"
 
 ARG OJDBC10_VERSION="19.12.0.0"
 # ARG PGSQL_VERSION="42.2.5"

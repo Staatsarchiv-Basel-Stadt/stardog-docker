@@ -4,20 +4,19 @@
 
 This stack is made up of two services:
 
-- Stardog, with the Oracle (`oracle.jdbc.driver.OracleDriver`) JDBC driver support.
-- Stardog Studio, to help starting to play with Stardog.
+* Stardog 7.8.2, with Oracle (`oracle.jdbc.driver.OracleDriver`) JDBC driver support.
+* Stardog Studio, to help starting to play with Stardog.
 
 ## Stardog
 
-Get a Stardog licence here: https://www.stardog.com/get-started/
-
-It will be sent by email.
-
-Download the license file and put it in the `~/volumes/stardog-home` directory.
+* Get a Stardog licence that fits our version here: https://www.stardog.com/get-started/
+* It will be sent by email.
+* Download the license file and put it in the `~/volumes/stardog-home` directory.
 
 ## Run the stack
 
-Run the docker-compose stack using this command:
+* Adapt the configurations in the compose file according to your host
+* Run the docker-compose stack using the following command:
 
 ```sh
 docker-compose up --build
