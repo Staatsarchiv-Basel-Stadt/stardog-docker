@@ -4,7 +4,7 @@ services:
   stardog:
     build: .
     environment:
-      - STARDOG_SERVER_JAVA_ARGS="-Xmx3g -Xms3g -XX:MaxDirectMemorySize=6g -Dlog4j2.formatMsgNoLookups=true"
+      - STARDOG_SERVER_JAVA_ARGS=-Xmx3g -Xms3g -XX:MaxDirectMemorySize=6g -Dlog4j2.formatMsgNoLookups=true
     user: "1001:1002"
     ports:
       - 8081:5820
